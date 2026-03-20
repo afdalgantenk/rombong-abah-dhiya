@@ -1,57 +1,138 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romboh Abah Dhiya - Berkah & Amanah</title>
+    <title>Rombong Abah Dhiya - Solusi Usaha Anda</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            'primary': '#E6FFF2', // Hijau Mint Sangat Muda (BG)
+                            'accent': '#00E676',  // Hijau Neon Segar (Aksen)
+                            'dark': '#1A1D21',   // Slate Hampir Hitam (Teks/Nav)
+                            'card': '#FFFFFF',   // Putih Bersih
+                            'text': '#4F5660'    // Abu-abu Tua (Teks Deskripsi)
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-brand-primary text-brand-dark overflow-x-hidden">
 
-    <header class="bg-green-700 text-white py-20 px-6 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Romboh Abah Dhiya</h1>
-        <p class="text-xl opacity-90 mb-8">Solusi Berkah, Layanan Amanah untuk Semua Kebutuhan Anda.</p>
-        <a href="#kontak" class="bg-yellow-500 hover:bg-yellow-400 text-green-900 font-bold py-3 px-8 rounded-full transition shadow-lg">
-            Hubungi Kami
-        </a>
+    <nav class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-brand-dark tracking-tight">
+                Rombong<span class="text-brand-accent">.</span>AbahDhiya
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="#layanan" class="text-sm font-medium hover:text-brand-accent transition">Layanan</a>
+                <a href="https://wa.me/628123456789" class="bg-brand-dark text-white text-xs font-semibold py-2.5 px-6 rounded-full hover:bg-slate-800 transition shadow-sm">
+                    Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-white py-24 md:py-32 px-6 overflow-hidden">
+        <div class="absolute -top-10 -right-10 w-64 h-64 bg-brand-primary rounded-full opacity-50 blur-3xl"></div>
+        <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-teal-100 rounded-full opacity-50 blur-2xl"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block bg-brand-primary text-brand-accent text-xs font-semibold px-4 py-1.5 rounded-full mb-4 border border-teal-100">Solusi Amanah</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tighter leading-tight">
+                Produksi Rombong <br/> <span class="text-brand-accent">Berkualitas & Modern</span>
+            </h1>
+            <p class="text-xl text-brand-text max-w-3xl mx-auto mb-10 leading-relaxed">
+                Rombong Abah Dhiya menghadirkan desain rombong custom yang awet, fungsional, dan keren untuk menunjang kesuksesan usaha kuliner Anda.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/628123456789" class="bg-brand-accent text-slate-950 font-semibold py-4 px-10 rounded-xl transition shadow-lg shadow-teal-500/20 hover:scale-105">
+                    Hubungi Abah (WhatsApp)
+                </a>
+                <a href="#layanan" class="bg-brand-primary text-teal-800 font-semibold py-4 px-10 rounded-xl transition hover:bg-teal-100/70">
+                    Lihat Koleksi Desain
+                </a>
+            </div>
+        </div>
     </header>
 
-    <section class="max-w-4xl mx-auto py-16 px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6 text-green-800">Tentang Kami</h2>
-        <p class="text-lg leading-relaxed text-slate-600">
-            Selamat datang di layanan Romboh Abah Dhiya. Kami berdedikasi untuk memberikan pelayanan terbaik dengan prinsip kekeluargaan dan kejujuran. Fokus kami adalah kepuasan pelanggan dalam setiap aspek layanan yang kami berikan.
-        </p>
-    </section>
-
-    <section class="bg-white py-16 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <div class="p-8 border rounded-xl hover:shadow-md transition">
-                <h3 class="font-bold text-xl mb-3 text-green-700">Layanan A</h3>
-                <p class="text-slate-500 text-sm">Deskripsi singkat layanan yang disediakan oleh Romboh Abah Dhiya.</p>
+    <section class="max-w-7xl mx-auto py-20 px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold tracking-tight text-brand-dark mb-3">Kenapa Pilih Kami?</h2>
+            <p class="text-brand-text">Kualitas premium dengan pelayanan hati.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-brand-card p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <div class="w-14 h-14 bg-brand-primary rounded-2xl flex items-center justify-center mb-6 border border-teal-100 text-brand-accent">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-8.06 3.42 3.42 0 011.946-8.06 3.42 3.42 0 011.946 8.06 3.42 3.42 0 011.946 8.06 3.42 3.42 0 011.946 8.06 3.42 3.42 0 011.946 8.06z"></path></svg>
+                </div>
+                <h3 class="font-semibold text-xl mb-3 text-brand-dark">Bahan Awet</h3>
+                <p class="text-brand-text text-sm leading-relaxed">Menggunakan material aluminium dan besi pilihan yang tahan cuaca dan anti karat.</p>
             </div>
-            <div class="p-8 border rounded-xl hover:shadow-md transition">
-                <h3 class="font-bold text-xl mb-3 text-green-700">Layanan B</h3>
-                <p class="text-slate-500 text-sm">Deskripsi singkat layanan yang disediakan oleh Romboh Abah Dhiya.</p>
+            <div class="bg-brand-card p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <div class="w-14 h-14 bg-brand-primary rounded-2xl flex items-center justify-center mb-6 border border-teal-100 text-brand-accent">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <h3 class="font-semibold text-xl mb-3 text-brand-dark">Pengerjaan Cepat</h3>
+                <p class="text-brand-text text-sm leading-relaxed">Tim profesional kami siap menyelesaikan pesanan Anda tepat waktu tanpa mengurangi kualitas.</p>
             </div>
-            <div class="p-8 border rounded-xl hover:shadow-md transition">
-                <h3 class="font-bold text-xl mb-3 text-green-700">Layanan C</h3>
-                <p class="text-slate-500 text-sm">Deskripsi singkat layanan yang disediakan oleh Romboh Abah Dhiya.</p>
+            <div class="bg-brand-card p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <div class="w-14 h-14 bg-brand-primary rounded-2xl flex items-center justify-center mb-6 border border-teal-100 text-brand-accent">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h3 class="font-semibold text-xl mb-3 text-brand-dark">Harganya Berkah</h3>
+                <p class="text-brand-text text-sm leading-relaxed">Harga bersahabat untuk pemula usaha, tanpa biaya tersembunyi. Jujur dan amanah.</p>
             </div>
         </div>
     </section>
 
-    <footer id="kontak" class="bg-slate-900 text-white py-12 px-6 text-center">
-        <h2 class="text-2xl font-bold mb-4">Hubungi Romboh Abah Dhiya</h2>
-        <p class="mb-6 opacity-70">Ada pertanyaan atau butuh layanan? Kami siap membantu.</p>
-        <div class="flex justify-center gap-6">
-            <a href="https://wa.me/628123456789" class="hover:text-green-400">WhatsApp</a>
-            <a href="#" class="hover:text-blue-400">Instagram</a>
+    <section id="layanan" class="bg-white py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold tracking-tight text-brand-dark mb-4">Galeri Rombong Kami</h2>
+            <p class="text-brand-text mb-12 max-w-xl mx-auto">Kami bisa membuat rombong untuk bakso, mie ayam, kopi, martabak, dan lainnya sesuai request Anda.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="aspect-[4/3] bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400 font-mono text-xs border border-gray-200">
+                    [ Foto Rombong 1 ]
+                </div>
+                <div class="aspect-[4/3] bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400 font-mono text-xs border border-gray-200">
+                    [ Foto Rombong 2 ]
+                </div>
+                <div class="aspect-[4/3] bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400 font-mono text-xs border border-gray-200">
+                    [ Foto Rombong 3 ]
+                </div>
+            </div>
         </div>
-        <p class="mt-10 text-xs opacity-40">© 2024 Romboh Abah Dhiya. All rights reserved.</p>
+    </section>
+
+    <footer class="bg-brand-dark text-gray-300 py-16 px-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-4 text-white">Butuh Rombong?<br>Hubungi Abah Dhiya.</h2>
+                <p class="mb-8 opacity-70 text-sm">Konsultasi desain Gratis. Kami siap kirim ke wilayah Anda.</p>
+                <a href="https://wa.me/628123456789" class="bg-brand-accent text-slate-950 font-semibold py-3 px-8 rounded-full transition shadow-lg shadow-teal-500/10 hover:bg-white hover:shadow-none">
+                    WhatsApp Kami
+                </a>
+            </div>
+            <div class="space-y-4 text-sm bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                <p><strong>Alamat:</strong> Jl. Contoh No. 123, Kota Anda</p>
+                <p><strong>Jam Kerja:</strong> Senin - Sabtu (08.00 - 17.00)</p>
+                <p><strong>WA:</strong> +62 812-3456-789</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-xs opacity-40">
+            © 2024 Rombong Abah Dhiya. All rights reserved.
+        </div>
     </footer>
 
 </body>
